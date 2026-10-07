@@ -1,84 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuca Doces & Salgados</title>
+    <title>Tuca Doces & Salgados | Delícias Artesanais para Momentos Especiais</title>
 
-    <!-- LINHA DO FAVICON ADICIONADA AQUI: -->
-    <link rel="icon" href="Tuca.png" <\link>
+    <!-- Favicon utilizando a imagem da logo enviada -->
+    <link rel="icon" type="image/png" href="Tuca.png">
 
-    <!-- Conecta o HTML ao arquivo de estilo CSS -->
+    <!-- CSS Integrado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="banner-cookies" class="banner-cookies">
-    <p>
-        Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.
-    </p>
-    <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
-</div> 
 
-    <section class="banner-principal">
-<h1>Bem-vindo à Nosso Site de Confeitaria e Padaria</h1>
-<h3>Aqui mostraremos um pouco de nosso trabalho</h3>
-</section> 
+    <!-- Cabeçalho com Identidade e Menu Sticky -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo-container">
+                <img src="Tuca.png" alt="Logo Tuca Doces & Salgados" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#historia">Quem Somos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- 2. APRESENTAÇÃO PRINCIPAL -->
-    <section class="principal">
-        <span class="selo">Atendimento Rápido</span>
-        <h1>Doces e salgados para suas festas, confraternização, comemorações e tudo mais!</h1>
-        <p>Receitas artesanais feitas com carinho para a sua festa ou evento.</p>
-        
-        <!-- Imagem de capa -->
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbCIkTNoItAt02QGMA4BfPYOFb3kV1rjBNz0jcaU61DY8FLgdBm43eQxn&s=10" alt="Bolo de morango" class="foto-capa">
-    </section>
-
-    <!-- 3. VITRINE DE PRODUTOS -->
-    <section class="produtos">
-        <h2>Nossos Produtos</h2>
-
-        <div class="lista-produtos">
-            
-            <!-- Cartão 1 -->
-            <div class="cartao">
-                <img src="https://cdn.awsli.com.br/600x1000/2658/2658919/produto/257217253/fatia-de-bolo-vegano-de-brigadeiro-com-morangos-a3liq2p83s.png" alt="Bolos">
-                <h3>Bolos & Tortas</h3>
-                <p>Doces artesanais para festas</p>
-            </div>
-
-            <!-- Cartão 2 -->
-            <div class="cartao">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP79oJ6KGMgLkk0odPWM_7Z38SzDOr_k2cpxLsaRKCG9iaH7gd_OmCE-I&s=10" alt="Salgados">
-                <h3>Salgados de Festa</h3>
-                <p>coxinhas, bolinhas de queijos, presunto e queijo e etc.</p>
-            </div>
-
-            <!-- Cartão 3 -->
-            <div class="cartao">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzJR5HYCrVRS2zGhREE2ZRbp75F4ZAp3kCzsyUUnxJ6cEGUAkNMeTfZeI&s=10" alt="Docinhos">
-                <h3>Brigadeiros Gourmet</h3>
-                <p>Brigadeiros com recheio extra e de qualidade</p>
-            </div>
-
+    <!-- Banner Principal de Impacto (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Aventuras Saborosas para sua Mesa</h1>
+            <p class="hero-subtitle">Delícias artesanais feitas com carinho, ingredientes selecionados e o verdadeiro sabor caseiro para suas festas e momentos especiais.</p>
+            <a href="#contato" class="btn btn-primary">Faça seu Pedido Agora</a>
         </div>
     </section>
 
-    <!-- 4. CONTATO E ENCOMENDA -->
-    <section class="contato" id="contato">
-        <h2>Faça seu Pedido</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="tel" placeholder="Seu WhatsApp" required>
-            <textarea placeholder="O que você gostaria de encomendar?"></textarea>
-            <button type="submit">Enviar Pedido</button>
-        </form>
+    <!-- Seção Quem Somos / Nossa História -->
+    <section id="historia" class="section historia-section">
+        <div class="container">
+            <h2 class="section-title">Quem Somos / Nossa História</h2>
+            <div class="historia-card">
+                <div class="historia-text">
+                    <p>
+                        A <strong>Tuca Doces & Salgados</strong> nasceu da paixão de transformar receitas de família em memórias inesquecíveis. O que começou como uma produção artesanal na cozinha de casa ganhou o coração dos nossos clientes pelo cuidado rigoroso na escolha de cada ingrediente e pelo carinho colocado em cada preparo.
+                    </p>
+                    <p>
+                        Hoje, nos orgulhamos de fazer parte das melhores celebrações, desde um café da tarde especial até grandes aniversários e casamentos. Nosso compromisso é entregar sempre o equilíbrio perfeito entre tradição, frescor e um visual encantador que enche os olhos e o paladar.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 5. RODAPÉ -->
-    <footer>
-        <p>© 2026 Dulce Doces & Salgados</p>
+    <!-- Seção de Serviços ou Produtos -->
+    <section id="produtos" class="section produtos-section">
+        <div class="container">
+            <h2 class="section-title">Nossas Delícias</h2>
+            <div class="produtos-grid">
+                <div class="card-produto">
+                    <div class="card-icon">🎂</div>
+                    <h3>Bolos Festivos</h3>
+                    <p>Bolos personalizados e fofinhos para festas, produzidos com recheios cremosos e acabamento impecável.</p>
+                    <a href="#contato" class="btn btn-secondary">Encomendar</a>
+                </div>
+                <div class="card-produto">
+                    <div class="card-icon">🍫</div>
+                    <h3>Doces Finos</h3>
+                    <p>Brigadeiros gourmet, beijinhos, cajuzinhos e opções refinadas para dar um toque doce e elegante ao seu evento.</p>
+                    <a href="#contato" class="btn btn-secondary">Encomendar</a>
+                </div>
+                <div class="card-produto">
+                    <div class="card-icon">🥐</div>
+                    <h3>Salgadinhos de Festa</h3>
+                    <p>Coxinhas crocantes, empadinhas derretendo na boca, assados e fritos sempre quentinhos e saborosos.</p>
+                    <a href="#contato" class="btn btn-secondary">Encomendar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens com Legendas Semânticas -->
+    <section id="galeria" class="section galeria-section">
+        <div class="container">
+            <h2 class="section-title">Galeria de Sabores</h2>
+            <div class="galeria-grid">
+                <figure class="galeria-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WvDCJ3aikwll-dukWz9g9tY8_V9x9oWsXOtjwxSiXtKNQpicTEu6SF0&s=10" alt="Bolo de Morango com Chantilly">
+                    <figcaption>Torta de Morango</figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Torta Holandesa de Chocolate">
+                    <figcaption>Torta Holandesa Cremosa</figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU5MPp23nDsFR3aaH3mRDTY93fVX4cjA0NqiiXe5gSFtcd1ey6aBybChum&s=10" alt="Pão de Mel Recheado">
+                    <figcaption>Bolo de Chocolate Recheado</figcaption>
+                </figure>
+                <figure class="galeria-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWOK3hYv5Zn3maXmTTirmRF2awO1SfYrkkdriDENfI6QOrYVNn85h5H8&s=10" alt="Salgadinhos Crocantes para Festa">
+                    <figcaption>Salgadinhos para Festa</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato / Agendamento -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <h2 class="section-title">Peça um Orçamento ou Agende um Evento</h2>
+            <form class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail Corporativo / Pessoal</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-evento">Data do Evento</label>
+                    <input type="date" id="data-evento" name="data-evento" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Detalhes do Pedido ou Evento</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva os produtos desejados, quantidade de convidados, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé Completo -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Tuca Doces & Salgados. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Início</a>
+                <a href="#historia">Quem Somos</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="footer-external">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    📱 Siga no Instagram
+                </a>
+            </div>
+        </div>
     </footer>
 
+    <!-- Banner de Aceite de Cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Utilizamos cookies para oferecer a melhor experiência em nosso site e personalizar conteúdos. Ao continuar navegando, você concorda com nossa política de privacidade.</p>
+            <button id="accept-cookies" class="btn btn-primary btn-sm">Aceitar Cookies</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
