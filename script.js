@@ -1,21 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const bannerCookies = document.getElementById('banner-cookies');
-    const btnAceitar = document.getElementById('btn-aceitar-cookies');
+// Executa quando o DOM estiver completamente carregado
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
 
-    // Garante que o banner existe na página antes de continuar
-    if (!bannerCookies) return;
+    // Verifica no localStorage se o usuário já aceitou os cookies
+    const cookiesAccepted = localStorage.getItem('tuca_cookies_accepted');
 
-    // Verifica se o usuário já aceitou
-    const cookiesAceitos = localStorage.getItem('cookiesAceitos');
-    if (cookiesAceitos === 'sim') {
-        bannerCookies.classList.add('oculto');
+    if (cookiesAccepted === 'true') {
+        cookieBanner.classList.add('hidden');
     }
 
-    // Adiciona o evento de clique caso o botão exista
-    if (btnAceitar) {
-        btnAceitar.addEventListener('click', () => {
-            localStorage.setItem('cookiesAceitos', 'sim');
-            bannerCookies.classList.add('oculto');
-        });
-    }
+    // Evento para o botão de aceitar cookies
+    acceptBtn.addEventListener('click', function() {
+        // Salva a decisão do usuário no navegador
+        localStorage.setItem('tuca_cookies_accepted', 'true');
+        
+        // Efeito suave para ocultar o banner
+        cookieBanner.style.opacity = '0';
+        cookieBanner.style.transition = 'opacity 0.4s ease';
+        
+        setTimeout(function() {
+            cookieBanner.classList.add('hidden');
+        }, 400);
+    });
 });
