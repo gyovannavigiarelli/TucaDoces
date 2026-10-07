@@ -1,0 +1,189 @@
+.banner-cookies {
+    position: fixed; /* Mantém a barra fixa mesmo ao rolar a página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo escuro com leve transparência */
+    color: #000000;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Garante que fique sobre todos os outros elementos */
+    font-size: 14px;
+}
+
+/* Botão de aceite */
+.btn-cookies {
+    background-color: #f8d7da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* Impede que o texto do botão quebre em duas linhas */
+    transition: background-color 0.3s ease;
+}
+
+.btn-cookies:hover {
+    background-color: #ebbfc2;
+}
+
+/* Classe utilitária para ocultar o banner */
+.oculto {
+    display: none !important;
+
+}  
+/* REGRAS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff9f5; /* Fundo bege bem claro */
+    color: #333;
+    text-align: center;
+}
+
+/* 1. TOPO DO SITE */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.topo h2 { color: #d93848; }
+
+.btn-top {
+    background: #4f8a67;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* 2. ÁREA PRINCIPAL */
+.principal {
+    padding: 30px 15px;
+}
+
+.selo {
+    background: #f8d7da;
+    color: #842029;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.principal h1 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.foto-capa {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* 3. VITRINE DE PRODUTOS */
+.produtos {
+    padding: 20px 15px;
+}
+
+/* Organiza os produtos em colunas no PC e em fila no celular */
+.lista-produtos {
+    display: flex;
+    flex-direction: column; /* No celular fica um embaixo do outro */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.cartao {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.cartao img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 4. FORMULÁRIO DE CONTATO */
+.contato {
+    padding: 30px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    margin: 15px auto 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #fcd9dc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 5. RODAPÉ */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* MAGIA DA RESPONSIVIDADE (Ajuste para PC) */
+@media (min-width: 600px) {
+    /* Quando a tela for maior que 600px (computador/tablet) */
+    .lista-produtos {
+        flex-direction: row; /* Coloca os cards lado a lado */
+        justify-content: center;
+    }
+
+    .cartao {
+        width: 30%; /* Cada card ocupa 30% da largura */
+    }
+
+    .principal h1 {
+        font-size: 32px;
+    }
+}
+/* 2. Banner Principal */
+.banner-principal {
+background-color: #fdd4d4;
+color: #ffffff;
+text-align: center;
+padding: 60px 20px;
+}
